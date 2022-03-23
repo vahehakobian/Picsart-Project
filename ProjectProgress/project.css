@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Menu Part Navbar */
+input{
+    margin: 1rem;
+}
+button{
+    background-color:#70bd64;
+    border:2px solid #70bd64;
+    border-radius: 5px;
+    width: 10%;
+    height: 30px;
+}
+.search{
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #70bd64;
+    text-align: center;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttonOfCompare{
+    margin: 1rem;
+    cursor: pointer;
+}
+/*   */
+.searchResult {
+    width: 70%;
+    top:0;
+    left: 20%;
+    position: absolute;
+    background-color: #f5f5f5;
+}
+/* Main page pictures in Gallary */
+.gallary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    position: absolute;
+    z-index: 2;
+}
+/* Every Div in Main Page */
+.heroImg :hover{
+    border: 5px solid red;
+}
+.heroImg img{
+    border-radius: 30%;
+}
+.heroImg {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+/* Name Of Hero in Image */
+p{
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translate(0%, 0%);
+}
+/* About Hero statistics and description of Hero */
+.infoDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 2;
+}
+.heroDescription{
+    width: 330px;
+    padding: 10px;
+    margin: 30px;
+    background-color: blanchedalmond; 
+    border-radius:10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.heroStatistic{
+    width: 330px;
+    padding: 10px;
+    margin: 30px;
+    background-color: blanchedalmond; 
+    border-radius:10px;
+    text-align: center;
+}
+
+/* animation of Background */
+#container {
+    position: fixed;
+    touch-action: none;
+  }
+
+/* Icons for favorite Stars */
+.fa-star{
+    position: absolute;
+    transform: translate(0%, 100%);
+    color: yellow;
+}
+.fa-star-o {
+    color: yellow;
+    cursor: pointer;
+}
+
+/* Animation Not Found */
+.errorPart{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Part */
+
+@media (max-width: 568px) { 
+    .search{
+        width: 70%;
+    }
+    .buttonOfCompare {
+       width: 50%;
+    }
+    .heroImg {
+       padding: .3rem; 
+    }
+    .errorCase{
+       width: 17rem;
+   }
+   .changePlace img{
+       width: 100%;
+   }
+}
+
+@media (min-width: 1025px) and (max-width:1280px){
+        .infoDiv{
+            flex-direction: column;
+        }
+    }
+@media (min-width: 768px) and (max-width:1024px){
+    .infoDiv{
+        flex-direction: column;
+    };
+}
